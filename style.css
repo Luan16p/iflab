@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(3, 236, 15);
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background: rgb(45, 216, 2);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  animation: down 1s ease-in-out;
+}
+
+.center a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.center a:hover {
+  opacity: 0.9;
+}
+
+/* ------ MENU MOBILE ------ */
+
+.menu {
+  display: none;
+  list-style: none;
+  color: rgb(44, 221, 0);
+}
+
+.menu li {
+  position: relative;
+  float: left;
+}
+
+#id-menu {
+  color: #000;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+.menu li ul {
+  position: absolute;
+  top: 40px;
+  left: -50px;
+  border: 1px solid rgb(224, 224, 224);
+  box-shadow: 0px 0px 20px rgb(224, 224, 224);
+  background: #fff;
+  display: none;
+  border-radius: 20px;
+}
+
+.menu li ul li {
+  opacity: 0.8;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+  display: flex !important;
+  padding: 10px;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.menu li ul li {
+  transition: 0.6s ease-in-out !important;
+  display: block;
+  width: 200px;
+}
+
+.menuDesign div {
+  opacity: 0.7;
+  width: 26px;
+  height: 3px;
+  margin: 5px;
+  background: #000;
+}
+
+/* ------ END ------ */
+
+/* ------ HEADER ------ */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 8vh;
+  position: fixed !important;
+  align-items: center;
+  background: #fff;
+  opacity: 1;
+  width: 100%;
+}
+
+nav a {
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+}
+
+nav ul li a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 30px;
+  color: rgb(37, 184, 0);
+}
+
+nav ul li::before,
+nav ul li::after {
+  content: '|';
+  opacity: 0.5;
+}
+
+/* ---- HOME ------ */
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-display {
+  height: 100vh;
+  background: url(https://github.com/Luan16p/Frameworks-img-database/blob/main/Data%20extraction-pana.png?raw=true)
+    no-repeat center right;
+  background-size: 700px;
+  background-attachment: fixed;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  width: 73vw;
+  height: 80vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 15px;
+  margin-left: 50px;
+}
+
+.content h2 {
+  font-size: 36px;
+}
+
+.content p {
+  font-size: 20px;
+  color: rgb(43, 43, 43);
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btns button {
+  cursor: pointer;
+  height: 5vh;
+  border-radius: 50px;
+}
+
+.btn1 {
+  border: 0;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgb(204, 203, 203);
+  width: 300px;
+  transition: 0.4s;
+}
+
+.btn1:hover {
+  color: rgb(37, 184, 0);
+  box-shadow: 0px 0px 40px rgb(167, 166, 166);
+}
+
+.btn2 {
+  border: 0;
+  background: rgb(37, 184, 0);
+  width: 250px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.btn2:hover {
+  box-shadow: 0px 0px 20px rgb(41, 192, 3);
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  height: 70vh;
+}
+
+.fcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100vw;
+}
+
+#cards-logo {
+  font-size: 40px;
+  text-shadow: 5px 0px 50px rgb(42, 207, 1);
+  color: rgb(116, 236, 3);
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card-single {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(44, 221, 0);
+  width: 17vw;
+  height: 36vh;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: rgb(72, 255, 0);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-single:hover {
+  box-shadow: 0 0 40px rgb(172, 172, 172);
+}
+
+.card-single img {
+  width: 8vw;
+}
+
+.card-single:hover {
+  transform: scale(1.1);
+}
+
+.makers {
+  background: rgb(93, 255, 52);
+}
+
+.fmakers {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 60vh;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-makers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 200px;
+  align-items: center;
+  transform: translateY(-50px);
+  margin: 20px;
+}
+
+#makers-logo {
+  padding-top: 40px;
+}
+
+.content-makers img {
+  width: 400px;
+}
+
+.fmakers h2 {
+  font-size: 50px;
+  text-shadow: 0px 0px 50px #fff;
+}
+
+.text ul li a {
+  color: #fff;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 400px;
+}
+.text ul li {
+  list-style: circle !important;
+  font-weight: bold;
+}
+
+#cb {
+  font-size: 30px;
+}
+
+.getStarted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.getStarted button {
+  padding: 12px 50px;
+  border: 0;
+  border-radius: 5px;
+  background: rgb(3, 236, 15);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.getStarted button:hover {
+  box-shadow: 0px 0px 40px rgb(3, 236, 15);
+}
+
+/* ---- ABOUT ------ */
+
+#about-ul {
+  text-align: start !important;
+}
+
+#about-ul li {
+  list-style-type: circle;
+}
+
+#about-logo {
+  text-align: start !important;
+  font-size: 60px;
+}
+
+.about-display {
+  height: 100vh;
+  background: url(https://github.com/Luan16p/Frameworks-img-database/blob/main/Version%20control-bro.png?raw=true)
+    no-repeat right;
+  background-size: 600px;
+  background-attachment: fixed;
+}
+
+#about-content {
+  background: rgba(255, 255, 255, 0.747);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 40px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 50vh;
+  justify-content: space-around;
+  color: #fff;
+  background: rgb(3, 236, 15);
+}
+
+.about-content div {
+  max-width: 500px;
+}
+
+.about-content h2 {
+  font-size: 50px;
+}
+.outcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.outcontent button {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0);
+  width: 200px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+  height: 3.5vh;
+  border-radius: 10px;
+}
+
+/* ---- FOOTER ----- */
+
+footer {
+  height: 30vh;
+  background: rgb(42, 207, 1);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 300px;
+}
+
+footer div {
+  color: rgb(255, 255, 255) !important;
+}
+
+footer div li > a {
+  color: #fff;
+  list-style-type: none;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer div:nth-child(0) {
+  max-width: 200px;
+}

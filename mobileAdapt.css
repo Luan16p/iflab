@@ -1,0 +1,102 @@
+@media (max-width: 999px) {
+  nav ul {
+    display: none !important;
+  }
+
+  .menu {
+    display: flex !important;
+    opacity: 1;
+  }
+
+  nav ul li::before {
+    content: ' - ';
+    opacity: 0.7;
+    color: #000;
+  }
+
+  nav ul li::before,
+  nav ul li::after {
+    content: '' !important;
+  }
+
+  nav ul li a:hover {
+    color: rgb(29, 145, 0) !important;
+    opacity: 0.7 !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .flexbox {
+    width: 100vw;
+    max-width: 800px;
+  }
+  .content {
+    justify-content: center;
+    text-align: center;
+    margin-left: 0;
+    margin: 10px;
+  }
+
+  .btns {
+    align-items: center;
+    gap: 10px;
+  }
+  .btns button {
+    width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .cards {
+    flex-flow: column wrap !important;
+  }
+
+  .card-single {
+    width: 250px !important;
+  }
+
+  .features {
+    height: 100%;
+  }
+
+  #cards-logo {
+    margin-top: 50px;
+  }
+  .card-single:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 977px) {
+  .content-makers img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .content-makers {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .about-content {
+    height: 50vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: column-reverse;
+  }
+
+  .about-content p {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    height: 100%;
+    gap: 50px;
+    text-align: center;
+  }
+}
