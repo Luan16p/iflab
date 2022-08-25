@@ -9,3 +9,7 @@
 ### -> TypeScript
 
 ### 😁
+
+## Integrantes
+### - Sabrina Lima Robert
+### - Luan Freire Alves da Silva
