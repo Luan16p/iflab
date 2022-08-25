@@ -102,24 +102,33 @@ export default function Home() {
             <h2 id="makers-logo">Equipe</h2>
 
             <div className="content-makers">
-              <div className="text">
-                <h2 id="cb">Equipe que ajudou a criar o projeto</h2>
+              <div className="users">
+                <div className="user1">
+                  <img
+                    src="https://github.com/Luan16p/Frameworks-img-database/blob/main/user.png?raw=true"
+                    alt=""
+                  />
 
-                <ul>
-                  <li>
-                    <a href="https://www.instagram.com/luan.alvessss/">
-                      Luan Freire Alves da Silva
-                    </a>
-                  </li>
+                  <div className="txt-user">
+                    <h3>Luan Freire Alves da Silva</h3>
+                    <p>
+                      Desenvolveu o front-end, back-end, rotas e integração
+                      nodeJS
+                    </p>
+                  </div>
+                </div>
+                <div className="user2">
+                  <img
+                    src="https://github.com/Luan16p/Frameworks-img-database/blob/main/user.png?raw=true"
+                    alt=""
+                  />
 
-                  <li>
-                    <a href="https://www.instagram.com/sabrina.robertt/">
-                      Sabrina Lima Robert
-                    </a>
-                  </li>
-                </ul>
+                  <div className="txt-user">
+                    <h3>Sabrina Lima Robert</h3>
+                    <p>Desenvolveu as transições, animações e Responsividade</p>
+                  </div>
+                </div>
               </div>
-
               <img
                 src="https://github.com/Luan16p/Frameworks-img-database/blob/main/Programmer-pana.png?raw=true"
                 alt=""

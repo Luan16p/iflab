@@ -76,20 +76,11 @@
 @media screen and (max-width: 450px) {
   .content-makers {
     justify-content: center;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 770px) {
-  .about-content {
-    height: 50vh;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    flex-direction: column-reverse;
-  }
-
-  .about-content p {
-    margin: 10px;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -97,6 +88,10 @@
     flex-direction: column;
     height: 100%;
     gap: 50px;
-    text-align: center;
+    padding: 30px;
+    align-items: flex-start;
+  }
+  .right {
+    flex-direction: column;
   }
 }

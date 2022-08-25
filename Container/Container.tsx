@@ -6,6 +6,7 @@ import Home from '../Pages/Home/Home';
 import FQA from '../Pages/FQA/FQA';
 import Register from '../Pages/Register/Register';
 import Login from '../Pages/Login/Login';
+import Hours from '../Pages/Hours/Hours';
 
 export default function Container() {
   return (
@@ -16,6 +17,7 @@ export default function Container() {
         <Route path="/fqa" element={<FQA />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/hours" element={<Hours />} />
       </Routes>
     </main>
   );
