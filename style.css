@@ -574,3 +574,45 @@ footer div li > a:hover {
   flex-direction: row;
   gap: 15px;
 }
+
+.error {
+  width: 100vw;
+  height: 100vh;
+  background: url(https://github.com/Luan16p/Frameworks-img-database/blob/main/404%20Error-bro.png?raw=true)
+    no-repeat center right;
+  background-size: 600px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  flex: 0;
+  justify-content: center;
+  width: 500px;
+  align-items: center;
+}
+
+.box-grid {
+  background: rgba(255, 255, 255, 0.979);
+  border-radius: 10px;
+  height: 300px;
+  padding: 50px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 30px rgb(190, 190, 190);
+  gap: 30px;
+}
+
+.box h2 {
+  font-size: 50px;
+}
+
+.btn-404 a {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+}

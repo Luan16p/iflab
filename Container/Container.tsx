@@ -7,6 +7,7 @@ import FQA from '../Pages/FQA/FQA';
 import Register from '../Pages/Register/Register';
 import Login from '../Pages/Login/Login';
 import Hours from '../Pages/Hours/Hours';
+import PageNotFound from '../Pages/Error/PageNotFound';
 
 export default function Container() {
   return (
@@ -18,6 +19,7 @@ export default function Container() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/hours" element={<Hours />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </main>
   );
