@@ -81,6 +81,9 @@
 }
 
 @media screen and (max-width: 770px) {
+  .box {
+    width: 100vw;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -95,3 +98,4 @@
     flex-direction: column;
   }
 }
+ 
