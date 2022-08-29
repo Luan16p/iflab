@@ -4,11 +4,11 @@
 
 ### Site feito para o trabalho de frameworks
 
-### * ReactJS
+### -> ReactJS
 
-### * NodeJS
+### -> NodeJS
 
-### * TypeScript
+### -> TypeScript
 
 ### 🧪
 
