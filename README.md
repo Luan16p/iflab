@@ -10,7 +10,7 @@
 
 ### -> TypeScript
 
-### 🧪
+### 
 
 ## Integrantes
 ### - Sabrina Lima Robert
