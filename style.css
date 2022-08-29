@@ -580,6 +580,7 @@ footer div li > a:hover {
   height: 100vh;
   background: url(https://github.com/Luan16p/Frameworks-img-database/blob/main/404%20Error-bro.png?raw=true)
     no-repeat center right;
+  background-attachment: fixed;
   background-size: 600px;
 }
 
@@ -640,4 +641,3 @@ footer div li > a:hover {
 .notFound--try li::before {
   content: '- ';
 }
- 
