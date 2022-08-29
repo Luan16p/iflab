@@ -596,14 +596,13 @@ footer div li > a:hover {
 .box-grid {
   background: rgba(255, 255, 255, 0.979);
   border-radius: 10px;
-  height: 300px;
   padding: 50px;
   width: 400px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   box-shadow: 0 0 30px rgb(190, 190, 190);
-  gap: 30px;
+  gap: 20px;
 }
 
 .box h2 {
@@ -615,4 +614,29 @@ footer div li > a:hover {
   border-radius: 5px;
   background: #000;
   color: #fff;
+  transition: 0.3s;
+  box-shadow: 0 0 15px #000;
+}
+
+.btn-404 a:hover {
+  box-shadow: 0 0 30px rgb(56, 56, 56);
+}
+
+.notFound--try {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.notFound--try li {
+  cursor: pointer;
+}
+
+.notFound--try li:hover {
+  color: red;
+}
+
+.notFound--try li::before {
+  content: '- ';
 }
